@@ -1,0 +1,47 @@
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+#Mais h2{
+    text-align: left;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+#menu ul li { 
+    display: inline; 
+}
+#menu ul li a {
+    padding: 5px 9px;
+    display: inline-block;
+
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    transition-duration: 0.4s;
+}
+#menu ul li a:hover {
+    background-color:#535353;
+    color: #fff;
+    border-bottom:3px solid #000;
+}
+
