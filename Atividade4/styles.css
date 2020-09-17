@@ -1,0 +1,74 @@
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+#map{
+    margin-left: 0px;
+}
+#Mais h2{
+    text-align: left;
+}
+#menu{
+    margin-top: 10px;    
+}
+
+#menu ul {
+    padding:0px 6%;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+    
+}
+#menu ul li { 
+    display: inline;   
+}
+#menu ul li a {
+    padding: 5px 6%;
+    display: inline-block;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    transition-duration: 0.4s;
+    
+}
+#menu ul li a:hover {
+    background-color:#535353;
+    color: #fff;
+    border-bottom:3px solid #000;
+}
+
+.imgprincipal{
+    background-image: url("_images/shenzhen.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    max-height: 100%;
+}
+#parallax{
+    height: 700px;
+    width: 100%;
+}
+img {    
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    float: left;
+    margin: 10px;
+}
+#sedeHuawei, #metro, #centroTec, #mate20, #dji{
+    float: right;
+}
+
+article{
+    margin: 2% 20%;
+}
+
