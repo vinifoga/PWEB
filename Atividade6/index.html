@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Pedra, Papel, Tesoura</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <header>
+          <img id="changeMode" src="_images/lightMode.png" alt="" onclick = "changeMode()" width="50" height="35">
+          
+        <h1>Pedra, Papel, Tesoura - じゃんけん </h1>
+      <p>No Japão, Pedra, papel, tesoura é chamado simplesmente de "Janken" . Acredita-se que Janken basea-se em dois jogos Ken mais antigos, "Suu Ken" e "San Sukumi Ken". O San Sukumi Ken existiu no Japão desde tempos antigos, e o Suu Ken foi importado da China no fim do século XVII. Os jogos Ken começaram a aumentar em popularidade em meados do século XIX. Acredita-se que Janken foi inventado no fim do século XIX, julgando fontes textuais da época sobre jogos Ken.</p>   
+      </header>
+      <section id="opcoes">
+        <div class="pedra" onclick="joga(1)">
+            <p>Pedra</p>
+            <img src="_images/pedra.jpg">
+        </div>
+        <div class="papel" onclick="joga(2)">
+            <p>Papel</p>
+            <img src="_images/papel.jpg">
+        </div>
+        <div class="tesoura" onclick="joga(3)">
+            <p>Tesoura</p>
+            <img src="_images/tesoura.jpg">
+        </div>
+      </section>
+      <div id="resultado" style="display:none">
+          <p id="result"></p>
+      </div>
+      
+      <script type="text/javascript" src="functions.js"></script>
+  </body>
+</html>
