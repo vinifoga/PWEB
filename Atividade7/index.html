@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Comparar Valores</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <header> 
+      <h1>Comparar Valores</h1>
+      <p>Uma função em JavaScrip irá receber o valor dos 3 inputs abaixo e retorna o maior deles.</p>   
+      <p>Se dois ou três forem iguais retornar o valor deles.</p>   
+      </header>
+      <section id="inputs">
+        <input type="number" id="a" placeholder="Insira um número para A">
+        <input type="number" id="b" placeholder="Insira um número para B">
+        <input type="number" id="c" placeholder="Insira um número para C">
+      </section>
+      <section id="buttons">
+        <button onclick="verificar(
+          document.getElementById('a').value,
+          document.getElementById('b').value,
+          document.getElementById('c').value,         
+          )">Verificar</button>
+      </section>
+      <div id="resultado" style="display:none">
+          <p id="result1"></p>
+          <p id="result2"></p>
+      </div>
+      
+      <script type="text/javascript" src="functions.js"></script>
+  </body>
+</html>
