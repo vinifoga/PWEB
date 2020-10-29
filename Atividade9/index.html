@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Função Construtora</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <header> 
+      <h1>Função Construtora</h1>
+      <p>Função construtora para o Retângulo receber (base,altura),com um método para calcular a área. Criação de um objeto e executação do método que calcula a área</p>   
+      </header>
+      <div id="inputs">
+        <input type="text" placeholder="Base" id="base">
+        <input type="text" placeholder="Altura" id="altura">
+        <button onclick="retangulo(document.getElementById('base').value,document.getElementById('altura').value)">Criar Retângulo</button>
+      </div>
+      
+      <div id="retangulo" style="display:none">
+        <p id="area"></p>
+      </div>
+      <h1>Função Conta</h1>
+      <p>Função Conta, e funções Corrente e Poupança utilizando herança</p>
+      <div id="contas">
+        <h2>Conta Corrente</h2>
+        <input type="text" name="" id="nomeCC" placeholder="Nome Correntista">
+        <input type="text" name="" id="bancoCC" placeholder="Banco">
+        <input type="text" name="" id="numCC" placeholder="Número da Conta">
+        <input type="text" name="" id="saldoCC" placeholder="Saldo">
+        <input type="text" name="" id="saldoECC" placeholder="Saldo Especial">
+        <h2>Conta Poupança</h2>
+        <input type="text" name="" id="nomeCP" placeholder="Nome Correntista">
+        <input type="text" name="" id="bancoCP" placeholder="Banco">
+        <input type="text" name="" id="numCP" placeholder="Número da Conta">
+        <input type="text" name="" id="saldoCP" placeholder="Saldo">
+        <input type="text" name="" id="jurosCP" placeholder="Juros">
+        <button onclick="criarContas()">Salvar</button>
+      </div>
+    
+      <p id="resultCC"></p>
+      <br><br>
+      <p id="resultCP"></p>
+      
+      <script type="text/javascript" src="functions.js"></script>
+  </body>
+</html>
