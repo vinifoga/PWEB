@@ -1,0 +1,16 @@
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+body{
+    align-items: center;
+    text-align: center;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
