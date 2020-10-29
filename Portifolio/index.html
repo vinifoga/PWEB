@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Playfair+Display+SC:wght@700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="sortcut icon" href="_icons/flavicon.ico" type="image/x-icon" />
+    <title>Portifólio</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <header>
+        <div id="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div id="header">
+          <div id="darkLightMode">
+            <img src="_icons/LightMode.png" alt="" id="darkLightModeButton" onclick="changeMode()">
+          </div>
+          <div id="menu">
+            <a href="#design">Design</a>
+            <a href="#video">Video</a>
+            <a href="#programacao">Programação</a>
+          </div>
+          <div id="contato">
+            <a href="https://github.com/vinifoga" target="_blank"><img src="_icons/github.png" alt="" id="gitHubIcon"></a>            
+            <a href="https://www.linkedin.com/in/vinicius-f-fogaca/" target="_blank"><img src="_icons/linkedin.png" alt="" id="linkedinIcon"></a>
+            <a href="mailto:viniciusfernandes38@gmail.com" target="_blank"><img src="_icons/gmail.png" alt="" id="mailIcon"></a>
+            <a href="https://t.me/viniciusffogaca" target="_blank"><img src="_icons/telegram.png" alt="" id="telegramIcon"></a>
+          </div>
+        </div>
+        </div>
+        
+      </header>
+      <section id="#top">
+        <div id="info" class="changeModeDarkColor">
+          <div id="perfil">
+            <img src="_images/perfil.png" alt="" style="width: 18vw;">
+          </div>
+          <div id="infoText">
+            <div id="sobre" class="changeModeLighthColor" onmouseover="mostrarInfoText(true)" onmouseout="mostrarInfoText(false)">
+              <h1>Sobre mim</h1>  
+              <p id="pSobre" style="display: none">Estudante de análise e desenvolvimento de sistemas, apaixonado por inovação, tecnologia e sua constante  evolução.
+              Preocupado em produzir trabalhos de qualidade e frequentemente não meço esforços para que o resultado seja o melhor possível.</p>
+            </div>
+            <br>
+            <div id="formacao" class="changeModeLighthColor" onmouseover="mostrarFormacao(true)" onmouseout="mostrarFormacao(false)">
+              <h1>Formação</h1>
+              <p id="pFormacao" style="display: none">
+                2018-2022
+                <br><br>
+                Análise e Desenvolvimento de Sistemas
+                Faculdade de Tecnologia de Sorocaba
+                Período: 5º Semestre - Noturno
+                Conclusão: 1º Semestre de 2022
+                <br><br>
+                Suporte Básico de Sistemas de Gestão Empresarial
+                Fundação FAT
+                Conclusão: Dezembro de 2020
+              </p>
+            </div>       
+          </div>
+        </div>         
+        <br>
+        <div id="infoHabIdioma" class="changeModeDarkColor">
+          <div id="habilidades" class="changeModeLighthColor" onclick="animateBar(50,60,75,50,50,50,50,40)" onmouseout="fecharHabilidades()">
+            <h1 id="pHabilidades">Habilidades</h1>
+            <div id="colunasHabilidades" style="display: none;">
+              <div id="habs1">
+                <p>SQL</p>
+                <div class="barrinha" id="barrinha1"></div>
+                <p>JavaScript</p>
+                <div class="barrinha" id="barrinha2"></div>
+                <p>HTML/CSS</p>
+                <div class="barrinha" id="barrinha3"></div>
+                <p>Python</p>
+                <div class="barrinha" id="barrinha4"></div>
+              </div>
+              <div id="habs2">
+                <p>PhotoShop</p>
+                <div class="barrinha" id="barrinha5"></div>
+                <p>Illustrator</p>
+                <div class="barrinha" id="barrinha6"></div>
+                <p>Premiere</p>
+                <div class="barrinha" id="barrinha7"></div>
+                <p>Figma</p>
+                <div class="barrinha" id="barrinha8"></div>
+              </div>
+            </div>           
+          </div>
+          <div id="idiomas" class="changeModeLighthColor" onclick="animateBarIdiomas(100,20,80)" onmouseout="fechar()">
+            <h1 id="pIdiomas">Idiomas</h1>
+            <div id="colunasIdiomas" style="display: none;">
+              <p>Português</p>
+              <div class="barrinhaIdiomas" id="barrinhaIdiomas1"></div>
+              <p>Chinês - Mandarim</p>
+              <div class="barrinhaIdiomas" id="barrinhaIdiomas2"></div>
+              <p>Inglês</p>
+              <div class="barrinhaIdiomas" id="barrinhaIdiomas3"></div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <section id="design">
+        <h1>Design</h1>
+        <div id="artes">
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/Cesta.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/Cesta1.jpg" alt="">
+            </div>
+          </div>
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/Funilaria 1.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/Funilaria 1.png" alt="">
+            </div>
+          </div>
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/Salgados 1.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/Salgados 1.png" alt="">
+            </div>
+          </div>
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/Esmalteria.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/Esmalteria.png" alt="">
+            </div>
+          </div>
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/Foto1.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/Foto.png" alt="">
+            </div>
+          </div>
+          <div class="flip">
+            <div class="frente">
+              <img src="_images/PetShop-01 6.png" alt="">
+            </div>
+            <div class="fundo">
+              <img src="_images/PetShop-01 6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="video">
+        <h1>Video</h1>
+        <div id="videos">
+          <div class="changeModeDarkColor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KtSCj58ZAyQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="changeModeDarkColor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UY7DVc7JF7s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="changeModeDarkColor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l1v7e2VrmRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="changeModeDarkColor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KcjJ_DDhFws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="changeModeDarkColor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3hb-78WvjL4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </section>
+      <section id="programacao">
+        <h1>Programação</h1>
+        <div>
+          <div id="javascript">
+            <p><img src="_icons/javascript.png" alt=""><h1>JavaScript</h1></p>            
+          </div>
+          <div id="projetos">
+            <div class="changeModeDarkColor">
+              <p>Analisador de Números</p>
+              <a href='https://github.com/vinifoga/JS/tree/master/analisadorNumeros' target="_blank"><img src="_images/AnalisadorNumeros.png"></a>
+            </div>
+            <div class="changeModeDarkColor">
+              <p>Tabuada</p>
+              <a href='https://github.com/vinifoga/JS/tree/master/Tabuada/TabuadaDinamica' target="_blank"><img src="_images/Tabuada.png"></a>
+            </div>
+            <div class="changeModeDarkColor">
+              <p>Calculadora de Matrizes</p>
+              <a href='https://github.com/vinifoga/JS/tree/master/MatrixCalculator' target="_blank"><img src="_images/MatrixCalculator.png"></a>
+            </div>
+            <div class="changeModeDarkColor">
+              <p>Jokenpo</p>
+              <a href='https://github.com/vinifoga/PWEB/tree/master/Atividade6' target="_blank"><img src="_images/Jokenpo.png"></a>
+            </div>
+
+
+          </div>
+          <div id="python">
+            <p><img src="_icons/python.png" alt=""><h1>Python</h1></p>
+          </div>
+          <div id="projetos">
+            <div class="changeModeDarkColor">
+              <p>Adivinhe o Número</p>
+              <a href='https://github.com/vinifoga/Python/tree/master/guessTheNumber' target="_blank"><img src="_images/GuessTheNumber.png"></a>
+            </div>
+            <div class="changeModeDarkColor">
+              <p>Pedra, Papel, Tesoura</p>
+              <a href='https://github.com/vinifoga/Python/tree/master/rockPaperScissors' target="_blank"><img src="_images/RockPaperScissors.png"></a>
+            </div>
+             
+          </div>
+         
+        </div>
+
+      </section>
+
+      <script type="text/javascript" src="functions.js"></script>
+  </body>
+  <footer>
+    <h3>
+      Desenvolvido por Vinícius Fernandes Fogaça
+    </h3>
+    <div id="voltarInicio">
+      <a href="#top">
+        <h3>Voltar ao Início <img src="_icons/sinal-de-seta.png" alt=""></h3>
+      </a>
+    </div>
+    
+    
+  </footer>
+</html>

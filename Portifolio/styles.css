@@ -1,0 +1,254 @@
+/* font-family: 'Gochi Hand', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif; */
+a{
+    text-decoration: none;
+    color: #000;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #AAD0F2;
+    padding-top: 1vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#darkLightModeButton{
+    height: auto;
+    width: 10vw;
+    padding-bottom: 1vw;
+}
+#gitHubIcon, #linkedinIcon, #mailIcon, #telegramIcon {
+    height: auto;
+    width: 5vw;
+    padding-bottom: 1vw;
+}
+#menu{
+    margin-top: 1vw;
+}
+#menu a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 1vw;
+    padding: 1vw;
+}
+#menu a:hover{
+    background-color: #60ACF0;
+    border-radius: 5vw;
+    cursor: pointer;
+}
+#contato a{
+    margin: 1vw;
+}
+#info{
+    background-color: #60ACF0;
+    margin-top: 10vw;
+    padding: 8vw;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+#perfil{
+    margin-right: 15vw;
+}
+#sobre, #formacao, #habilidades, #idiomas{
+    background-color: #AAD0F2;
+    border-radius: 60px;
+    padding: 1vw;
+    text-align: center;
+    cursor: pointer;
+}
+#sobre h1, #formacao h1, #habilidades h1, #idiomas h1{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2.75vw ;
+
+}
+#sobre p, #formacao p, #habilidades p, #idiomas p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;    
+}
+#infoHabIdioma{
+    background-color: #60ACF0;
+    padding: 2vw;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 2vh;
+}
+.barrinha, .barrinhaIdiomas {
+    width:  80%;
+    height: 20px;
+    margin: 5%;
+}
+#habs1, #habs2{
+    display: inline-block;
+    width: 40%;
+}
+#design h1, #video h1, #programacao h1{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 4vw ;
+    text-align: center;
+}
+#artes, #videos, #projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,2fr));
+    margin-right: 15%;
+    margin-left:15% ;
+}
+#artes div{
+    background-color: #60ACF0;
+    padding: 2vh;
+    margin: 2vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+#artes div img:hover{
+    transform: scale(1.5);
+}
+#videos div{
+    background-color: #60ACF0;
+    padding: 3vh;
+    margin: 2vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+#projetos div{
+    background-color: #60ACF0;
+    padding: 3vh;
+    margin: 2vw;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+}
+#projetos div p{
+    font-family: 'Roboto', sans-serif;
+}
+#javascript, #python{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+#javascript a:hover, #python a:hover{
+    cursor: pointer;
+}
+.flip{
+    float: left;
+    perspective: 1000px;
+}
+.flip .frente{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+.flip .fundo{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+.flip:active .frente{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+.flip:active .fundo{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 113px;
+    background-color: #4F6070;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer h3{
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center; 
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#voltarInicio{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+} 
+
+label{
+    display: none;
+    font-size: 2.7rem;
+    width: 5vw;
+}
+#toggle{
+    display: none;    
+}   
+@media only screen and (max-width: 500px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    #header{
+        margin-top: 2vw;
+        text-align: center;
+        width: 100%;
+        display: none;   
+        position: relative;
+
+    }   
+    #nav{
+        text-align: center;
+        height: 5vw;
+        line-height: 5vw;
+    }
+    #menu{
+        text-align: center;
+        width: 100%;
+    }
+    #menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin:0;
+        font-size: 5vw;
+    }
+    #contato{
+        display: flex;
+        justify-content: space-around;
+    }
+    #darkLightModeButton{
+        height: auto;
+        width: 20vw;
+        padding-bottom: 1vw;
+    }
+    #gitHubIcon, #linkedinIcon, #mailIcon, #telegramIcon {
+        height: auto;
+        width: 10vw;
+        padding-top: 2vw;
+        padding-bottom: 1vw;
+    }
+    #toggle:checked + #header{
+        display: block;
+    }
+
+
+}
